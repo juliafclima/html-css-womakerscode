@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.item {
+    width: 100px;
+    height: 60px;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    margin: 15px;
+}
+
+.item:hover {
+    animation-play-state: paused;
+}
+
+.tennis:hover {
+    animation-play-state: paused;
+}
+
+.blue {
+    background-color: lightseagreen;
+}
+
+.red {
+    background-color: rgb(250, 71, 71);
+}
+
+.yellow {
+    background-color: rgb(236, 236, 111);
+}
+
+.green {
+    background-color: rgb(106, 235, 106);
+    margin: 0px;
+}
+
+@keyframes fadeIn { 
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.animationFadeIn { /*Aparecer na tela*/
+    animation: fadeIn 5s linear infinite;
+}
+
+/*@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+.animationFadeOut {
+    animation: fadeOut 5s linear infinite;
+---------------------------------------------
+.animationFadeOut {
+    animation: fadeIn 5s linear infinite;
+    animation-direction: reverse;
+}OUTRAS FORMAS DE FAZER*/
+
+.animationFadeOut { /*Desaparece da tela*/
+    animation: fadeIn 2s linear;
+    animation-direction: reverse; /*De trás p frente*/
+    animation-fill-mode: forwards; /*estilo do último frame*/
+}
+
+@keyframes fadeInOut {
+    0% {opacity: 1;}
+    50% {opacity: 0.1;}
+    100% {opacity: 1;}
+}
+
+.animationFadeInOut {
+    animation: fadeInOut 1.5s linear infinite;
+}
+
+.spinner {
+    border-radius: 50%;
+}
+
+@keyframes rotate { /*Girar*/
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(360deg);}
+}
+
+.animationSpinner {
+    animation: rotate 2s linear infinite;
+}
+
+.animationSpinnerEase {
+    animation: rotate 2s ease infinite; /*Acelera e para0*/
+}
+
+.animationSpinnerEaseIn {
+    animation: rotate 2s ease-in infinite; /*Acelera e para0*/
+}
+
+.animationSpinnerEaseOut {
+    animation: rotate 2s ease-out infinite; /*Acelera e para0*/
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    padding: 0px;
+    margin: 0px;
+}
+
+@keyframes position {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    35% {
+        top: 0;
+        left: calc(100% - 60px);
+    }
+
+    50% {
+        top: calc(100% - 60px);
+        left: calc(100% - 60px);
+    }
+
+    85% {
+        top: calc(100% - 60px);
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+.animationPosition {
+    position: absolute;
+    animation: position 4s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+.positionBox {
+    width: 100%;
+    height: 300px;
+    background-color: #a09d9d;
+    position: relative;
+    background-size: 100%;
+    background-image: url(../image/quadra-tennis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes promocao {
+    0% {
+        content: "PROMOÇÃO";
+    }
+
+    30% {
+        content: "Aproveite";
+    }
+
+    60% {
+        content: "Frete Grátis";
+    }
+}
+
+.animationContent::after {
+    animation: promocao 2s linear infinite;
+    content: " ";
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Scale</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div, h2, h3 {
+            margin-bottom: 60px;
+            margin-left: 100px;
+        }
+
+        .caixas {
+            width: 100px;
+            height: 100px;
+        }
+
+        .caixa-1 {
+            background: lightblue;
+            transform: scaleY(2);
+        }
+
+        .caixa-2 {
+            background-color: lightcoral;
+            transform: scaleX(2);
+        }
+
+        .caixa-3 {
+            background-color: lightgreen;
+            transform: rotateX(50deg);
+        }
+
+        .caixa-4 {
+            background-color: lime;
+            transform: rotateY(50deg);
+        }
+
+        .caixa-5 {
+            background-color: lightseagreen;
+            transform: rotateZ(50deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Transformações com CSS - trabalhando com o translate</h1>
+
+    <h2>Scale</h2>
+    <h3>scaleX |</h3>
+    <div class="caixa-2 caixas"></div>
+    <h3>scaleY -</h3>
+    <div class="caixa-1 caixas"></div>
+
+    <h2>Rotate</h2>
+    <h3>RotateX -</h3>
+    <div class="caixa-3 caixas">X</div>
+    <h3>RotateY |</h3>
+    <div class="caixa-4 caixas">Y</div>
+    <h3>rotateZ /</h3>
+    <div class="caixa-5 caixas">Z</div>
+</body>
+</html>

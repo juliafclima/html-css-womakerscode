@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+   <h1>Trabalhando com media queries</h1> 
+
+    <div class="caixa"></div>
+   
+    <div class="textoResponsivo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aspernatur commodi assumenda nobis sunt dignissimos doloribus, voluptates laboriosam sed obcaecati a consectetur delectus numquam quod repellendus quidem ducimus mollitia consequuntur nesciunt quasi necessitatibus architecto aliquid tempora quam. Quam consequuntur officia deleniti maxime culpa accusantium quasi debitis! Reiciendis deserunt dolor autem harum aut eos architecto illum aspernatur beatae earum! Suscipit possimus sed rem cupiditate rerum eius deserunt ea accusamus neque voluptatibus in delectus veniam assumenda porro, fuga qui. Dolore, commodi? Iure repellat iste molestiae expedita facere ipsam sit, id nobis nihil enim quasi, architecto est culpa a? Sed ad alias animi facere aut! Asperiores iusto ducimus accusamus, sit molestias obcaecati molestiae rem velit suscipit harum ex placeat corporis dolore pariatur praesentium repellat facere sapiente qui eaque!</div>
+
+    <h2>Trabalhando com imagens</h2>
+
+    <!--<picture>
+        <source media="(max-width: 747px)" srcset="image/gato-p.jpg" type="image/jpg">
+        <img src="image/gato-g.jpg" alt="Foto de um gatinho">
+    </picture>-->
+
+    <img
+    srcset="image/gato-p.jpg 254w,
+            image/gato-g.jpg 520w"
+    sizes="(max-width: 800px) 50vh, 100vh"
+    src="image/gato-g.jpg"
+    alt="Foto de um gatinho">
+    <!-- srcset -> 254w(idth) / 520w(idth): LARGURA DA IMAGEM EM PX (width)
+         sizes -> CONDIÇÃO DA MÍDIA... Ex:.     
+         sizes="(max-width: 800px) 50vh, 100vh
+                Quando a condição for verdadeira ela ocupará 50vh senão ocupará 100vh
+        Então:
+        1. Ver a largura do dispositivo.
+        2. Ver qual condição de mídia na lista sizes é a primeira a ser verdadeira.
+        3. Ver qual é o slot para aquela condição de mída.
+        4. Carregar a imagem definida na lista srcset que possui o mesmo tamanho do slot ou, se não houver, da primeira imagem que é maior que o tamanho do slot escolhido.
+
+    -->
+</body>
+</html>

@@ -1,0 +1,154 @@
+ROLES WAI-ARIA
+
+Funções
+
+Funções de widget
+
+button (en-US)
+checkbox (en-US)
+gridcell (en-US)
+link
+menuitem
+menuitemcheckbox
+menuitemradio
+option
+progressbar
+radio
+scrollbar
+searchbox
+separator (when focusable)
+slider
+spinbutton
+switch (en-US)
+tab (en-US)
+tabpanel (en-US)
+textbox
+treeitem (en-US)
+
+Funções compostas
+As técnicas abaixo descrevem cada função composta, bem como suas funções filho obrigatórias e opcionais.
+
+combobox
+grid (en-US) (incluindo as funções row (en-US), gridcell (en-US), rowheader, columnheader)
+listbox (incluindo a função option)
+menu
+menubar
+radiogroup (veja a função radio)
+tablist (en-US) (incluindo as funções tab (en-US) and tabpanel (en-US))
+tree (en-US)
+treegrid
+
+Funções da estrutura de documento
+
+application (en-US)
+article (en-US)
+cell (en-US)
+columnheader
+definition
+directory
+document (en-US)
+feed
+figure (en-US)
+group
+heading (en-US)
+img
+list (en-US)
+listitem (en-US)
+math
+none
+note
+presentation
+row (en-US)
+rowgroup (en-US)
+rowheader
+separator
+table (en-US)
+term
+textbox (en-US)
+toolbar
+tooltip (en-US)
+
+Funções de ponto de referência
+
+banner
+complementary (en-US)
+contentinfo (en-US)
+form (en-US)
+main (en-US)
+navigation (en-US)
+region (en-US)
+search (en-US)
+
+Funções de regiões ativa
+
+alert
+log
+marquee
+status
+timer (en-US)
+
+Funções de janela
+
+alertdialog (en-US)
+dialog (en-US)
+
+Estados e propriedades
+
+Atributos de widget
+
+aria-autocomplete
+aria-checked
+aria-current
+aria-disabled
+aria-errormessage
+aria-expanded
+aria-haspopup
+aria-hidden
+aria-invalid
+aria-label
+aria-level
+aria-modal
+aria-multiline
+aria-multiselectable
+aria-orientation
+aria-placeholder
+aria-pressed
+aria-readonly
+aria-required
+aria-selected
+aria-sort
+aria-valuemax
+aria-valuemin
+aria-valuenow
+aria-valuetext
+
+Atributos da região ativa
+
+aria-live
+aria-relevant
+aria-atomic
+aria-busy
+
+Atributos de drag & drop
+
+aria-dropeffect
+aria-dragged
+
+Atributos de relacionamento
+
+aria-activedescendant
+aria-colcount
+aria-colindex
+aria-colspan
+aria-controls
+aria-describedby
+aria-details (en-US)
+aria-errormessage
+aria-flowto
+aria-labelledby
+aria-owns
+aria-posinset
+aria-rowcount
+aria-rowindex
+aria-rowspan
+aria-setsize

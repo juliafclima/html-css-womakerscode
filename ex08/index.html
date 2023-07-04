@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações com CSS</title>
+    <style>
+        @keyframes animacao {
+            0% {
+                background-color: #ff0000;
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                background-color: #ffa500;
+                top: 0px;
+                left: 100px;
+            }
+
+            50% {
+                background-color: #ffff00;
+                top: 100px;
+                left: 100px;
+            }
+
+            75% {
+                background-color: #008000;
+                top: 100px;
+                left: 0px;
+            }
+
+            100% {
+                background-color:  #0000ff;
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+        .botao {
+            padding: 30px;
+            background-color: fuchsia;
+            color: white;
+            font-weight: bolder;
+            border-radius: 4px;
+            transition: background-color 0.50s;
+        }
+
+        .botao:hover {
+            text-decoration: underline;
+            background-color: lightseagreen;
+        }
+
+        .caixa-1 {
+            width: 100px;
+            height: 100px;
+            animation: animacao 5s infinite;
+            position: relative; /*para usar o top, left*/
+        }
+
+        .caixa-2 {
+            width: 100px;
+            height: 100px;
+            animation: animacao 5s infinite;
+            position: relative; 
+            will-change: top, left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animações</h1>
+
+    <h2>Transition com CSS - criando transições</h2>
+    <button class="botao">Clique aqui</button>
+
+    <h2>Animation com CSS - animações como uma linha do tempo</h2>
+
+    <div class="caixa-1"></div>
+
+    <h2>Animation com CSS - performance em animações</h2>
+
+    <div class="caixa-2"></div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .caixa {
+            background-color: lightpink;
+            width: 50px;
+            height: 50px;
+            border: 1.5px solid lightskyblue;
+            margin: 5px;
+        }
+
+        .conteiner {
+            border: 2px solid green;
+            display: inline-flex;
+            flex-wrap: wrap-reverse;
+            /*flex-flow: [flex-direction] + [flex-wrap]*/
+        }
+
+        #row {
+            flex-direction: row;
+        }
+
+        #rowReverse {
+            flex-direction: row-reverse;
+        }
+
+        #column {
+            flex-direction: column;
+        }
+
+        #columnReverse {
+            flex-direction: column-reverse;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com flex-box</h1>
+    <h2>Flex-direction</h2>
+    <h3>Row (padrão)</h3>
+    <div id="row" class="conteiner">
+        <div class="caixa">Caixa 1</div>
+        <div class="caixa">Caixa 2</div>
+        <div class="caixa">Caixa 3</div>
+        <div class="caixa">Caixa 4</div>
+    </div>
+
+    <h3>Row-reverse</h3>
+    <div id="rowReverse" class="conteiner">
+        <div class="caixa">Caixa 1</div>
+        <div class="caixa">Caixa 2</div>
+        <div class="caixa">Caixa 3</div>
+        <div class="caixa">Caixa 4</div>
+    </div>
+
+    <h3>Column</h3>
+    <div id="column" class="conteiner">
+        <div class="caixa">Caixa 1</div>
+        <div class="caixa">Caixa 2</div>
+        <div class="caixa">Caixa 3</div>
+        <div class="caixa">Caixa 4</div>
+    </div>
+
+    <h3>Column-reverse</h3>
+    <div id="columnReverse" class="conteiner">
+        <div class="caixa">Caixa 1</div>
+        <div class="caixa">Caixa 2</div>
+        <div class="caixa">Caixa 3</div>
+        <div class="caixa">Caixa 4</div>
+    </div>
+
+    <h2>Flex-wrap</h2>
+    <div class="conteiner">
+        <div class="caixa">Caixa 1</div>
+        <div class="caixa">Caixa 2</div>
+        <div class="caixa">Caixa 3</div>
+        <div class="caixa">Caixa 4</div>
+    </div>
+</body>
+</html>

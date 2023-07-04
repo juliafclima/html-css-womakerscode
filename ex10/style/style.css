@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body {
+    background-color: white;
+}
+        
+.caixa {
+    width: 580px;
+    height: 300px;
+    background-color: aqua;
+}
+
+@media (max-width: 600px) {
+    .caixa {
+        width: 290px;
+        height: 300px;
+        background-color: red;
+    }
+}
+
+@media (max-width: 400px) {
+    .caixa {
+        width: 145px;
+        height: 300px;
+        background-color: blue;
+    }
+}
+
+@media (max-width: 200px) {
+    .caixa {
+        width: 72px;
+        height: 300px;
+        background-color: fuchsia;
+    }
+}
+
+.textoResponsivo {
+    width: 100%;
+    max-width: 800px;
+    text-align: justify;
+}

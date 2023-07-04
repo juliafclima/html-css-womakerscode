@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-glow</title>
+    <style>
+        #conteiner {
+            border: 3px solid green;
+            display: flex;
+        }
+
+        .caixa {
+            background-color: lightsalmon;
+            width: 40px;
+            height: 40px;
+            border: 2px dashed yellow;
+            margin: 3px;
+        }
+
+        .caixa:nth-child(1) {
+            flex-grow: 1;
+        }
+
+        .caixa:nth-child(2) {
+            flex-grow: 2;
+        }
+
+        .caixa:nth-child(3) {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com flex-grow</h1>
+
+    <div id="conteiner">
+        <div class="caixa">Caixa 1</div>
+        <div class="caixa">Caixa 2</div>
+        <div class="caixa">Caixa 3</div>
+    </div>
+</body>
+</html>
