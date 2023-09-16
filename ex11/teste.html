@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>A Vida de Jade Picon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffd6e1; 
+            font-family: Arial, sans-serif;
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+        }
+
+        header {
+            background-color: #ff6b81;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .texto-header {
+            color: #fff;
+            font-weight: bolder;
+            font-family: 'Special Elite', cursive;
+        }
+
+        .conteudo {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff; 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+            padding: 20px; 
+            border: 1px solid #ccc; 
+        }
+
+        p {
+            color: #333; /* Texto escuro */
+            line-height: 1.6;
+            font-size: 50%;
+        }
+
+        .imagem-responsiva {
+            max-width: 100%;
+            height: auto;
+        }
+
+        audio {
+            margin-bottom: 20px;
+        }
+
+        #texto-maquina {
+            overflow: hidden;
+            border-right: .15em solid orange; /* Efeito de cursor de digitação */
+            white-space: nowrap; /* Evita quebras de linha */
+            font-size: 24px;
+        }
+
+        h2 {
+            font-family: 'Special Elite', cursive;
+            font-size: 3em;
+            color: #ff6b81;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="texto-maquina" class="texto-header"></div>
+    </header>
+
+    <div class="conteudo">
+        <h2>Biografia</h2>
+        <p>Jade Picon é uma blogueira, atriz e ex-sister</p>
+
+        <img src="jadepicon-memes-bbb22_6.webp" alt="jade bbb" class="imagem-responsiva">
+
+        <h2>Carreira</h2>
+        <p>Interpretadora de sotaques. "Manda buxxxxxcarrr"</p>
+
+        <img src="maxresdefault.jpg" alt="sotaque" class="imagem-responsiva">
+
+        <h2>Empreendedorismo</h2>
+        <p>Conhecida por muitos hits</p>
+
+        <audio controls loop>
+            <source src="SnapInsta.io - Vinheta - Jade Picon - Fuan   Fuan   Fuen   Fuon (128 kbps).mp3" type="audio/mpeg">
+            Seu navegador não suporta a reprodução de áudio.
+        </audio>
+
+        <img src="JadePicon.jpg" alt="fuen fuen" class="imagem-responsiva">
+    </div>
+
+    <script>
+        var texto = "A Vida de Jade Picon";
+        
+        var intervalo = 50;
+        
+        var index = 0;
+
+        function animarTexto() {
+            if (index < texto.length) {
+                document.getElementById("texto-maquina").innerHTML += texto.charAt(index);
+                index++;
+                setTimeout(animarTexto, intervalo);
+            }
+        }
+
+        window.onload = function () {
+            animarTexto();
+        };
+    </script>
+</body>
+</html>
